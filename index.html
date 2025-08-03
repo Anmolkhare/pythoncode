@@ -1,85 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Single Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f6fa;
+            color: #2f3640;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+        nav {
+            background: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.7rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2f3640;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #2575fc;
+        }
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #2575fc;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background: #2f3640;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Beautiful Website</h1>
+        <p>A clean and modern responsive design</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <header>
-    <h1>Welcome to My Jenkins Page</h1>
-  </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p style="text-align:center; max-width: 700px; margin:auto;">
+            We create elegant, user-friendly websites that bring ideas to life. Our designs focus on 
+            simplicity, responsiveness, and beautiful UI that works on any device.
+        </p>
+    </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Creative, responsive, and visually appealing web designs tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <h3>Development</h3>
+                <p>High-performance websites built with clean, modern code and best practices.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website’s visibility and reach more customers with optimized SEO strategies.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>This is a simple single-page layout built with HTML and CSS.</p>
-  </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p style="text-align:center;">📧 Email: contact@mywebsite.com</p>
+        <p style="text-align:center;">📱 Phone: +91 9876543210</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Here you can showcase your work or portfolio items.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: example@email.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
-
+    <footer>
+        <p>© 2025 My Beautiful Website | Designed with ❤️</p>
+    </footer>
 </body>
 </html>
